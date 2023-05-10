@@ -1,0 +1,43 @@
+{
+    "name": "nguyendachuy/laravel-delhivery-api",
+    "description": "Delhivery API (V1) Laravel SDK. Integration of Delhivery API in your laravel application is easy, This package enables you to utilize most of your Delhivery functions.",
+    "keywords": [
+        "Laravel",
+        "Delhivery API",
+        "Laravel Delhivery API",
+        "Delhivery SDK Module"
+    ],
+    "homepage": "https://github.com/nguyendachuy/laravel-delhivery-api",
+    "authors": [
+        {
+            "name": "Nguyen Dac Huy",
+            "email": "huy.cit@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NguyenHuy\\Delhivery\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NguyenHuy\\Delhivery\\DelhiveryServiceProvider"
+            ],
+            "aliases": {
+                "Delhivery": "NguyenHuy\\Delhivery\\Delhivery"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    }
+}
